@@ -1,0 +1,94 @@
+{
+    "usuarios": [
+      {
+        "id": 1,
+        "nome": "João Silva",
+        "email": "joao.silva@gmail.com",
+        "telefone": "(11) 98765-4321",
+        "endereco": {
+          "rua": "Rua das Flores",
+          "numero": 123,
+          "bairro": "Centro",
+          "cidade": "São Paulo",
+          "estado": "SP",
+          "cep": "01001-000"
+        }
+      },
+      {
+        "id": 2,
+        "nome": "Maria Oliveira",
+        "email": "maria.oliveira@gmail.com",
+        "telefone": "(21) 99876-5432",
+        "endereco": {
+          "rua": "Avenida Brasil",
+          "numero": 456,
+          "bairro": "Copacabana",
+          "cidade": "Rio de Janeiro",
+          "estado": "RJ",
+          "cep": "22001-000"
+        }
+      }
+    ],
+    "produtos": [
+      {
+        "id": 101,
+        "nome": "Notebook Dell XPS 13",
+        "descricao": "Notebook ultrafino com tela de 13 polegadas",
+        "preco": 7499.99,
+        "quantidade_estoque": 10,
+        "categoria": "Eletrônicos"
+      },
+      {
+        "id": 102,
+        "nome": "Smartphone Samsung Galaxy S22",
+        "descricao": "Celular de última geração com câmera avançada",
+        "preco": 4999.99,
+        "quantidade_estoque": 25,
+        "categoria": "Eletrônicos"
+      },
+      {
+        "id": 103,
+        "nome": "Cafeteira Expresso Nespresso",
+        "descricao": "Cafeteira expresso com design moderno",
+        "preco": 599.99,
+        "quantidade_estoque": 50,
+        "categoria": "Eletrodomésticos"
+      }
+    ],
+    "pedidos": [
+      {
+        "id": 1001,
+        "id_usuario": 1,
+        "data": "2024-12-01",
+        "status": "Entregue",
+        "itens": [
+          {
+            "id_produto": 101,
+            "quantidade": 1,
+            "preco_unitario": 7499.99
+          },
+          {
+            "id_produto": 103,
+            "quantidade": 2,
+            "preco_unitario": 599.99
+          }
+        ],
+        "total": 8699.97
+      },
+      {
+        "id": 1002,
+        "id_usuario": 2,
+        "data": "2024-12-02",
+        "status": "Aguardando pagamento",
+        "itens": [
+          {
+            "id_produto": 102,
+            "quantidade": 1,
+            "preco_unitario": 4999.99
+          }
+        ],
+        "total": 4999.99
+      }
+    ]
+  }
+  

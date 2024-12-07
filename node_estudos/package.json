@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "express": "^4.21.1",
+    "ts-node-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0"
+  },
+  "scripts": {
+    "test": "comando de teste",
+    "dev": "ts-node-dev --respawn server.ts"
+  }
+}

@@ -1,0 +1,13 @@
+version: "3.8"  # Versão do Docker Compose
+
+services:
+  server:  # Nome do serviço
+    build: .  # Diretório contendo o Dockerfile
+    ports:
+      - "3000:3000"  # Mapeia a porta 3000 do host para o container
+    volumes:
+      - .:/app  # Sincroniza o diretório atual com o diretório /app dentro do container
+
+volumes:
+  server:
+    driver: local
